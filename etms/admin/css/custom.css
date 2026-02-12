@@ -1,0 +1,374 @@
+/* ===== ADMIN TOP RIGHT PROFILE IMAGE ===== */
+.topbar .user_profile img,
+.user_img img,
+.profile_details img {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 2px solid #ffffff;
+}
+
+/* Dropdown ke andar bhi fix */
+.profile_details .dropdown-toggle img {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+/* Sidebar admin image */
+.sidebar_user_info .user_img img {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid #0d6efd;
+}
+
+/* ================================
+   ADMIN PROFILE IMAGE FIX
+================================ */
+
+/* Sidebar admin image */
+.user_profile_side .user_img img,
+.admin-avatar {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 2px solid #0d6efd;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Top right header dropdown image */
+.right_topbar .user_profile_dd img {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 2px solid #ffffff;
+}
+
+/* Prevent image stretching */
+img.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   COMMON FIXES
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* =========================
+   MAIN CONTENT WIDTH FIX
+========================= */
+
+.page-content,
+.content-wrapper,
+.right-content,
+.container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================
+   TABLE RESPONSIVE FIX
+========================= */
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+/* =========================
+   COLUMN WIDTH CONTROL
+========================= */
+
+/* S.No */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 60px;
+  text-align: center;
+}
+
+/* Photo */
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 90px;
+  text-align: center;
+}
+
+/* Department */
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 120px;
+}
+
+/* Name */
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 140px;
+}
+
+/* Email */
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 200px;
+  word-break: break-all;
+}
+
+/* Contact */
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 130px;
+}
+
+/* Date */
+.table th:nth-child(7),
+.table td:nth-child(7) {
+  width: 130px;
+}
+
+/* Action */
+.table th:nth-child(8),
+.table td:nth-child(8) {
+  width: 160px;
+  text-align: center;
+}
+
+/* =========================
+   ACTION BUTTON FIX
+========================= */
+
+.table td .btn {
+  padding: 6px 10px;
+  font-size: 13px;
+  margin: 2px;
+  white-space: nowrap;
+}
+
+/* =========================
+   IMAGE FIX (EMPLOYEE PHOTO)
+========================= */
+
+.table td img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* =========================
+   SMALL SCREEN SAFETY
+========================= */
+
+@media (max-width: 1200px) {
+  .table {
+    font-size: 13px;
+  }
+}
+
+/* =========================================================
+   ✅ MANAGE TASK + DASHBOARD FINAL FIX (ADDED SAFELY)
+========================================================= */
+
+/* Content area exact alignment */
+#content {
+  width: calc(100% - 260px);
+  margin-left: 260px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar collapsed */
+body.sidebar-collapsed #content {
+  width: calc(100% - 80px);
+  margin-left: 80px;
+}
+
+/* Page title (Dashboard / Manage Task) */
+.page_title h2,
+.page_title h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px 0 20px;
+  color: #1f2937;
+}
+
+/* Prevent heading hiding */
+.midde_cont {
+  padding-top: 20px;
+}
+
+/* White card wrapper */
+.white_shd {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Manage task table header */
+.table thead th {
+  background: #1f2933;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 8px;
+  white-space: nowrap;
+}
+
+/* Table body */
+.table tbody td {
+  vertical-align: middle;
+  text-align: center;
+  color: #374151;
+  padding: 10px 8px;
+}
+
+/* Alternate row */
+.table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Priority badges */
+.badge-normal {
+  background: #0ea5e9;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge-urgent {
+  background: #f59e0b;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge-most {
+  background: #ef4444;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Status badges */
+.status-pending {
+  background: #6b7280;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.status-inprogress {
+  background: #facc15;
+  color: #000;
+  padding: 5px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.status-completed {
+  background: #22c55e;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* Action buttons group */
+.action-btns {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-view {
+  background: #06b6d4;
+  color: #fff;
+}
+
+.btn-edit {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* Responsive safety */
+@media (max-width: 992px) {
+  #content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .table {
+    min-width: 1100px;
+  }
+}
+/* =========================================
+   CONTACT FORM FINAL FIX (FORCE STYLE)
+========================================= */
+
+.contact-box .form-control,
+.contact-box input,
+.contact-box textarea {
+
+    background-color: #f1f5f9 !important;
+    color: #111111 !important;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+}
+
+/* Focus state fix */
+.contact-box .form-control:focus,
+.contact-box input:focus,
+.contact-box textarea:focus {
+
+    background-color: #f1f5f9 !important;
+    color: #111111 !important;
+    border: 1px solid #22c55e !important;
+    box-shadow: 0 0 0 0.2rem rgba(34,197,94,0.25) !important;
+}
+
+/* Remove validation background change */
+.contact-box .form-control:valid,
+.contact-box .form-control:invalid {
+
+    background-color: #f1f5f9 !important;
+    color: #111111 !important;
+}
+
+/* Remove browser autofill yellow */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+
+    -webkit-box-shadow: 0 0 0 1000px #f1f5f9 inset !important;
+    -webkit-text-fill-color: #111111 !important;
+}

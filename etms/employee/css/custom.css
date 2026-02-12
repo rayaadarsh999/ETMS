@@ -1,0 +1,88 @@
+/* =========================
+   DASHBOARD LAYOUT FIX
+========================= */
+
+.full_container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.inner_container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #102235;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+/* Content */
+#content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 20px;
+    background: #f5f6fa;
+}
+
+/* Topbar */
+.topbar {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+/* Card */
+.white_shd {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Table */
+.table thead {
+    background: #102235;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+    text-align: center;
+    background: #102235;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media(max-width:991px){
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+}
+
+@media(max-width:768px){
+    #sidebar {
+        position: relative;
+        width: 100%;
+    }
+
+    #content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
