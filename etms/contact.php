@@ -167,23 +167,23 @@ include('includes/dbconnection.php');
             </div>
 
             <!-- CONTACT FORM -->
-            <div class="col-md-8">
-                <div class="contact-form">
+            <div class="col-md-8" style="color: black !important;">
+                <div class="contact-form text-dark">
                     <h3>Send Message</h3>
 
-                    <form method="post">
+                    <form action="https://formspree.io/f/xreqpvkr" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" name="name" placeholder="Your Name" required>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-dark">
                                 <input type="email" name="email" placeholder="Your Email" required>
                             </div>
                         </div>
 
                         <input type="text" name="purpose" placeholder="Purpose (Support / Query)" required>
 
-                        <textarea name="message" placeholder="Write your message..." required></textarea>
+                        <textarea name="message" placeholder="Write your message..." style="color: black !important;" required ></textarea>
 
                         <button type="submit">Send Message</button>
                     </form>

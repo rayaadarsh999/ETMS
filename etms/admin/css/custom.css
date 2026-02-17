@@ -372,3 +372,57 @@ textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #f1f5f9 inset !important;
     -webkit-text-fill-color: #111111 !important;
 }
+/* ===============================
+   TASK REPORT PAGE FIX
+================================ */
+
+/* White card full width */
+.white_shd {
+    width: 100% !important;
+    overflow: hidden;
+}
+
+/* Proper responsive wrapper */
+.white_shd .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* IMPORTANT: Remove fixed layout for report table */
+.white_shd table {
+    width: 100% !important;
+    table-layout: auto !important;   /* ⭐ This fixes scroll problem */
+}
+
+/* Header styling clean */
+.white_shd table thead th {
+    background: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Body cells */
+.white_shd table tbody td {
+    text-align: center;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+/* Remove forced column width (report page only) */
+.white_shd table th,
+.white_shd table td {
+    width: auto !important;
+}
+
+/* Fix report title alignment */
+.white_shd h4,
+.white_shd h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Remove unnecessary scroll bar style */
+.white_shd::-webkit-scrollbar {
+    height: 6px;
+}

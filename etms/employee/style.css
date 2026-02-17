@@ -624,7 +624,7 @@ a:focus {
 .topbar {
     position: fixed;
     width: 100%;
-    padding-left: 280px;
+    padding-left: 20px;
     z-index: 2;
     background: #15283c;
     top: 0;

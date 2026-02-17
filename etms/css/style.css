@@ -2796,12 +2796,12 @@ h2.typoh2 {
 .contact-form textarea {
 	font-size: 15px;
 	letter-spacing: 1px;
-	color: #fff;
+	color: black;
 	padding: 0.5em 1em;
 	border: 0;
 	width: 100%;
 	border-bottom: 1px solid #dcdcdc;
-	background: none;
+	background: #fff;
 	-webkit-appearance: none;
 	outline: none;
 	border-radius: 00px 30px 30px 0px;
