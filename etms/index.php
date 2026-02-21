@@ -7,15 +7,12 @@ include('includes/dbconnection.php');
 <html>
 <head>
 	<title>Employee Task Management System || Home</title>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
-
 	<style>
 		/* ===== NEW PROFESSIONAL SECTION ===== */
 		.etms-solution{
@@ -65,7 +62,6 @@ include('includes/dbconnection.php');
 	font-weight:700;
 	margin-bottom:12px;
 	min-height:48px;   /* title height fix */
-
 		.etms-card p{
 	font-size:14.5px;
 	color:#666;
@@ -74,22 +70,16 @@ include('includes/dbconnection.php');
 }
 	</style>
 </head>
-
 <body>
-
 <?php include_once('includes/header.php'); ?>
-
 <!-- ================= SLIDER ================= -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
 	</ol>
-
 	<div class="carousel-inner" role="listbox">
-
 		<div class="item active">
 			<div class="container">
 				<div class="carousel-caption">
@@ -101,7 +91,6 @@ include('includes/dbconnection.php');
 				</div>
 			</div>
 		</div>
-
 		<div class="item item2">
 			<div class="container">
 				<div class="carousel-caption">
@@ -113,7 +102,6 @@ include('includes/dbconnection.php');
 				</div>
 			</div>
 		</div>
-
 		<div class="item item3">
 			<div class="container">
 				<div class="carousel-caption">
@@ -125,9 +113,7 @@ include('includes/dbconnection.php');
 				</div>
 			</div>
 		</div>
-
 	</div>
-
 	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 		<span class="fa fa-chevron-left"></span>
 	</a>
@@ -136,8 +122,6 @@ include('includes/dbconnection.php');
 	</a>
 </div>
 <!-- ================= SLIDER END ================= -->
-
-
 <!-- ================= NEW PROFESSIONAL CONTENT (BETWEEN IMAGES) ================= -->
 <div class="etms-solution">
 	<div class="container">
@@ -147,9 +131,7 @@ include('includes/dbconnection.php');
 			employees, tasks, performance, and reports in one centralized platform.
 			It improves transparency, accountability, and overall organizational productivity.
 		</p>
-
 		<div class="row">
-
 			<div class="col-md-3">
 	<a href="task-management.php" style="text-decoration:none;">
 		<div class="etms-card">
@@ -159,7 +141,6 @@ include('includes/dbconnection.php');
 		</div>
 	</a>
 </div>
-
 <div class="col-md-3">
 	<a href="employee-management.php" style="text-decoration:none;">
 		<div class="etms-card">
@@ -169,7 +150,6 @@ include('includes/dbconnection.php');
 		</div>
 	</a>
 </div>
-
 <div class="col-md-3">
 	<a href="performance-reports.php" style="text-decoration:none;">
 		<div class="etms-card">
@@ -179,7 +159,6 @@ include('includes/dbconnection.php');
 		</div>
 	</a>
 </div>
-
 <div class="col-md-3">
 	<a href="security.php" style="text-decoration:none;">
 		<div class="etms-card">
@@ -189,14 +168,10 @@ include('includes/dbconnection.php');
 		</div>
 	</a>
 </div>
-
-
 		</div>
 	</div>
 </div>
 <!-- ================= NEW SECTION END ================= -->
-
-
 <!-- ================= EXISTING IMAGE SECTION ================= -->
 <div class="team_work_agile">
 	<h4>
@@ -204,11 +179,8 @@ include('includes/dbconnection.php');
 		we achieve our objectives.
 	</h4>
 </div>
-
 <?php include_once('includes/footer.php'); ?>
-
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.js"></script>
-
 </body>
 </html>
